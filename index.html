@@ -1,0 +1,622 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+  .animated-heading {
+  font-size: 40px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(9, 56, 3);
+
+  /* animation settings */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.5s ease-out forwards;
+}
+
+/* keyframes for the effect */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body{
+  padding-top: 100px;
+}
+html {
+  scroll-padding-top: 100px;  /* adjust to navbar height */
+  scroll-behavior: smooth;
+  
+}
+
+</style>
+<nav class="navbar fixed-top navbar-expand-lg bg-body-teritary" data-bs-theme="dark"
+     style="background-color: rgb(37, 64, 12);">
+  <div class="container-fluid">
+    <!-- Brand & logo stay on the left -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" alt="Nethra Eyecare Logo"
+           width="100" height="90" class="me-2">
+      <h1 class="mb-0" style="font-size: 30px;font-family: cursive;">
+        Nethra Eyecare &amp; Clinic
+      </h1>
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav links pushed to the right with ms-auto -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#category">Category</a>
+        </li>
+         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#service">Our Service</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link" href="#brands">Our Brands</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#appointment">Appointment</a>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Home Section -->
+ <section id="home">
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/black rayban.jpg"
+           class="d-block mx-auto"
+           alt="..."
+           style="height: 400px; width: 100%; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 50px;">RayBan</h5>
+        <p style="font-size: 30px;font-family: cursive;"> Shades on ,World off #RayBan_Black</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/stack.jpg"
+           class="d-block mx-auto"
+           alt="..."
+           style="height: 400px; width: 100%; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="font-size: 60px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;">Stylish Shades On Display</h5>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;background-color: white;">A curated collection of trend-setting sunglasses-where every pair tells a different style story</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/op1.jpeg"
+           class="d-block mx-auto"
+           alt="..."
+           style="height: 400px; width: 100%; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="font-size: 60px;color: rgb(23, 24, 23);font-family: Georgia, 'Times New Roman', Times, serif;background-color: white;">Your vision,Our Expertise</h5>
+        <p style="background-color: white;color: black;">Experience the finest lenses and frames from trusted brands - Crafted for comfort and style.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+ </section>
+<br><br>
+
+
+<!-- Include this CSS in your <head> -->
+<style>
+/* Fade-in animation for text and image */
+@keyframes fadeUp {
+  0% {opacity: 0; transform: translateY(40px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+.about-section {
+  background: linear-gradient(135deg, #f7f8fa 0%, #e6eef5 100%);
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.about-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  animation: fadeUp 1s ease forwards;
+}
+.about-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  animation: fadeUp 1s ease 0.3s forwards;
+}
+.about-image img:hover {
+  transform: scale(1.05);
+}
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0d6efd; /* Bootstrap primary */
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeUp 1s ease forwards;
+}
+@keyframes fadeUp {
+  0% {opacity: 0; transform: translateY(40px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+.about-section {
+  background: linear-gradient(135deg, #f7f8fa 0%, #e6eef5 100%);
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.about-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  animation: fadeUp 1s ease forwards;
+}
+.about-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  animation: fadeUp 1s ease 0.3s forwards;
+}
+.about-image img:hover {
+  transform: scale(1.05);
+}
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0c4d05; /* Bootstrap primary */
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeUp 1s ease forwards;
+}
+/* Make all category cards equal size */
+.category-card {
+  width: 100%;          /* fills its column */
+  max-width: 450px;     /* optional max width */
+  height: 490px;        /* fixed overall height */
+  margin: 0 auto;       /* center within column */
+  border-radius: 15px;  /* rounded corners */
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  background-color: #c08d8d;
+}
+.category-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Control the image height so it stays consistent */
+.category-card img {
+  height: 250px;        /* set a fixed height for the image */
+  object-fit: cover;  
+    /* crop nicely if image ratio differs */
+}
+.category-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+.category-card .card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.category-title{
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 70px;
+  color: #0c4d05;
+}
+.card-text{
+  
+  color: black;
+  
+}
+
+</style>
+
+
+<!-- about -->
+<section class="about-section container" id="about">
+  <h2 class="section-title">About Nethra Eyecare & Opticals</h2>
+  <div class="row align-items-center g-4">
+    <!-- Text -->
+    <div class="col-lg-6 about-text">
+      <p>
+        At <strong>Nethra Eyecare Opticals</strong>, located in the vibrant city of Pattambi, 
+        we take immense pride in redefining customer service and satisfaction in the optical industry. 
+        With over <strong>25 years of expertise</strong>, we are committed to offering innovative vision care solutions 
+        that elevate the experience of every customer.
+      </p>
+      <p>
+        As a distinguished member of the renowned <strong>Popular Opticals</strong> family, 
+        Nethra Eyecare Opticals is part of a legacy that includes esteemed brands like 
+        <em>Brothers Opticals, Popular Opticals, Eye Point Opticals</em>, and <em>Nethra Eye Hospital</em>.
+        Our journey has been one of continuous growth, innovation, and customer-centric excellence.
+      </p>
+      <p>
+        With a focus on providing unparalleled eyewear and optical services, 
+        we proudly offer the largest collection of both international and domestic eyewear brands.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="col-lg-6 about-image text-center">
+      <img src="images/op1.jpeg" alt="Nethra Eyecare store front">
+    </div>
+  </div>
+</section>
+
+<br><br>
+
+<section id="category" class="py-5">
+  <h2 class="category-title text-center mb-4">Categories</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card category-card">
+        <img src="images/eye glass.jpg" class="card-img-top" alt="Eye Glasses">
+        <div class="card-body">
+          <h5 class="card-title display-5">Eye Glasses</h5>
+          <p class="card-text">Eyeglasses are a pair of lenses mounted in a frame you wear on your face so you can see better.</p>
+          <!-- <button type="button" class="btn btn-outline-success">Know More</button> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat for other cards -->
+    <div class="col">
+      <div class="card category-card">
+        <img src="images/screenglass.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Screen Glass</h5>
+          <p class="card-text">Computer glasses reduce glare, enhance contrast, and block blue light. They improve posture by allowing comfortable screen distance.</p>
+                    <!-- <button type="button" class="btn btn-outline-success">Know More</button> -->
+
+        </div>
+      </div>
+    </div>
+    <!-- Add more cards here -->
+      <div class="col">
+      <div class="card category-card">
+        <img src="images/sunglass.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sunglass</h5>
+          <p class="card-text">Sunglasses are an important type of eyewear that help to protect the eyes from UV rays emitted by the sun, as well as potentially harmful elements such as wind.</p>
+                   <!-- <button type="button" class="btn btn-outline-success">Know More</button> -->
+
+        </div>
+      </div>
+    </div>
+
+     <div class="col">
+      <div class="card category-card">
+        <img src="images/contactlense.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Contact Lense</h5>
+          <p class="card-text">Contact lenses are thin, round lenses that rest on the surface of your eyes to help you see more clearly.</p>
+                    <!-- <button type="button" class="btn btn-outline-success">Know More</button> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="service" class="container my-4">
+  <h1 class="brands-title text-center mb-4">Our Services</h1>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card border-success h-100">
+        <div class="card-body text-success">
+          <h5 class="card-title">Cataract Diagnosis Section</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100">
+        <div class="card-body text-success">
+          <h5 class="card-title">Pediatric Ophthalmology Department</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100">
+        <div class="card-body text-success">
+          <h5 class="card-title">Glaucoma Section</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100">
+        <div class="card-body text-success">
+          <h5 class="card-title">Retina Section</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100">
+        <div class="card-body text-success">
+          <h5 class="card-title">Cornea Section</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100">
+        <div class="card-body text-success">
+          <h5 class="card-title">Contact Lens Section</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100">
+        <div class="card-body text-success">
+          <h5 class="card-title">Optical Showroom</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- =========== BRANDS SECTION WITH SCROLLING LOGOS =========== -->
+<section id="brands" class="brands-section">
+  <h1 class="brands-title">Our Brands</h1>
+
+  <div class="brands-wrapper">
+    <div class="brands-track">
+      <!-- Duplicate set for smooth infinite scroll -->
+      <img src="images/Ray-Ban Logo vector (_cdr).jpg" alt="RayBan">
+      <img src="images/FILA Logo.jpg" alt="Fila">
+      <img src="images/davidjone.png" alt="David Jone">
+      <img src="images/Carrera Logo.jpg" alt="Carrera">
+      <img src="images/Police Sunglasses Logo Vector PNG Transparent With Clear Background ID 94001 _ TopPNG.jpg" alt="RayBan">
+     
+       <img src="images/Ray-Ban Logo vector (_cdr).jpg" alt="RayBan">
+      <img src="images/FILA Logo.jpg" alt="Fila">
+      <img src="images/davidjone.png" alt="David Jone">
+      <img src="images/Carrera Logo.jpg" alt="Carrera">
+      <img src="images/Police Sunglasses Logo Vector PNG Transparent With Clear Background ID 94001 _ TopPNG.jpg" alt="RayBan">
+     
+    </div>
+  </div>
+</section>
+
+<style>
+  
+/* ===== Layout ===== */
+.brands-section {
+  background: #f8f9fa;
+  padding: 40px 0;            /* space for heading */
+  text-align: center;
+}
+
+.brands-title {
+ font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 70px;
+  color: #0c4d05;
+  text-align: center;
+}
+
+/* Wrapper hides overflow so the track can slide */
+.brands-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Scrolling track */
+.brands-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: scroll-left 5s linear infinite;
+}
+
+/* Logos: keep aspect ratio, limit max height */
+.brands-track img {
+  max-height: 120px;          /* adjust to fit your design */
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Continuous left scroll */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+
+<section id="appointment" class="py-5">
+  <h1 class="text-center fw-bold"
+      style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             font-size: 70px; color: #0c4d05;">
+     Book Your Appointment
+  </h1>
+
+  <div class="container mt-4">
+    <div class="card w-100 shadow-lg border-0">
+      <div class="row g-0 align-items-center">
+        
+        <!-- Left: Doctor details -->
+        <!-- <div class="col-md-7 p-4">
+          <h3 class="card-title"
+              style="font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+                     font-size: 40px; color: rgb(65,25,25);">
+            Book Your Appointment
+          </h3> -->
+
+          <h4 style="font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                     color: black; font-weight: bolder; text-transform: uppercase;">
+            Dr. Unnikrishnan V.V
+          </h4>
+
+          <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    color: black; font-weight: bold;">
+            B.Sc, MBBS, DO
+          </p>
+
+          <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    color: black; font-weight: bold;">
+            Book Now: +91 9447 444 328
+          </p>
+        </div>
+
+        <!-- Right: Doctor image -->
+        <!-- <div class="col-md-5 text-center p-3">
+          <img src="images/Optometrista escrevendo na área de transferência _ Foto Premium.jpg" class="img-fluid rounded-end"
+               alt="Dr. Unnikrishnan"
+               style="max-height: 350px; object-fit: cover;">
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="container my-5">
+  <h1 class="text-center mb-4 contact-title">Contact Us</h1>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card contact-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Location</h5>
+          <p>Near GHS Pattambi, Perinthalmanna Road, Pattambi</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card contact-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Contact Number</h5>
+          <p>+91 9447 444 328</p>
+        </div>
+      </div>
+    </div>
+
+   <div class="col">
+  <div class="card contact-card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Social Media</h5>
+      <p>Follow us on Facebook & Instagram</p><br>
+      <i class="bi bi-instagram me-2"></i>
+      <a href="https://www.instagram.com/nethra.pattambi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="color: white;">
+        nethra.pattambi
+      </a><br>
+      <i class="bi bi-facebook me-2"></i>
+      <a href="https://www.facebook.com/share/1MSP8NJBNT/?mibextid=wwXIfr" style="color: white;">
+        Nethra EyeCare & Opticals
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+  
+  
+</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.05422796602!2d76.1845672745176!3d10.807158758627185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c5ce1013de53%3A0xdfbfd9c3e1585149!2sNethra%20eye%20care%20pattambi!5e0!3m2!1sen!2sin!4v1758455758867!5m2!1sen!2sin" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<style>
+/* Section heading */
+.contact-title {
+  font-family: "Cambria", Georgia, serif;
+  font-size: 3rem;          /* larger heading */
+  font-weight: bold;
+  color: #0c4d05;
+}
+
+/* Card style */
+.contact-card {
+  background-color: #198754; /* Bootstrap green */
+  color: #fff;               /* white text */
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card title */
+.contact-card .card-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraph text inside cards */
+.contact-card p {
+  font-family: "Cambria", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+</style>
