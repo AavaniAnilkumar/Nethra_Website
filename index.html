@@ -40,7 +40,7 @@ html {
     <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="images/logo.png" alt="Nethra Eyecare Logo"
            width="100" height="90" class="me-2">
-      <h1 class="mb-0" style="font-size: 30px;font-family: cursive;">
+      <h1 class="mb-0" style="font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
         Nethra Eyecare &amp; Clinic
       </h1>
     </a>
@@ -440,7 +440,51 @@ html {
   </div>
 </section>
 
+<style>
+  
+/* ===== Layout ===== */
+.brands-section {
+  background: #f8f9fa;
+  padding: 40px 0;            /* space for heading */
+  text-align: center;
+}
 
+.brands-title {
+ font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 70px;
+  color: #0c4d05;
+  text-align: center;
+}
+
+/* Wrapper hides overflow so the track can slide */
+.brands-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Scrolling track */
+.brands-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: scroll-left 5s linear infinite;
+}
+
+/* Logos: keep aspect ratio, limit max height */
+.brands-track img {
+  max-height: 120px;          /* adjust to fit your design */
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Continuous left scroll */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
 
 <section id="appointment" class="py-5">
   <h1 class="text-center fw-bold"
@@ -448,32 +492,45 @@ html {
              font-size: 70px; color: #0c4d05;">
      Book Your Appointment
   </h1>
-<div class="container mt-4">
-  <div class="card w-100 shadow-lg border-0">
-    <div class="row g-0 d-flex justify-content-center align-items-center text-center" style="min-height: 300px;">
-      
-      <!-- Doctor details -->
-      <div class="col-md-8 p-4">
-        <h4 style="font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                   color: black; font-weight: bolder; text-transform: uppercase;">
-          Dr. Unnikrishnan V.V
-        </h4>
 
-        <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                  color: black; font-weight: bold;">
-          B.Sc, MBBS, DO
-        </p>
+  <div class="container mt-4">
+    <div class="card w-100 shadow-lg border-0">
+      <div class="row g-0 align-items-center">
+        
+        <!-- Left: Doctor details -->
+        <!-- <div class="col-md-7 p-4">
+          <h3 class="card-title"
+              style="font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+                     font-size: 40px; color: rgb(65,25,25);">
+            Book Your Appointment
+          </h3> -->
 
-        <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                  color: black; font-weight: bold;">
-          Book Now: +91 9447 444 328
-        </p>
+          <h4 style="font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                     color: black; font-weight: bolder; text-transform: uppercase;">
+            Dr. Unnikrishnan V.V
+          </h4>
+
+          <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    color: black; font-weight: bold;">
+            B.Sc, MBBS, DO
+          </p>
+
+          <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    color: black; font-weight: bold;">
+            Book Now: +91 9447 444 328
+          </p>
+        </div>
+
+        <!-- Right: Doctor image -->
+        <!-- <div class="col-md-5 text-center p-3">
+          <img src="images/Optometrista escrevendo na área de transferência _ Foto Premium.jpg" class="img-fluid rounded-end"
+               alt="Dr. Unnikrishnan"
+               style="max-height: 350px; object-fit: cover;">
+        </div> -->
+
       </div>
-
     </div>
   </div>
-</div>
-
 
 <style>
   * {
@@ -574,53 +631,69 @@ html {
 </style>
 </section>
 
+<footer class="bg-dark text-light pt-5">
+  <div class="container">
+    <h1 class="text-center mb-4 contact-title">Contact Us</h1>
 
-<section id="contact" class="container my-5">
-  <h1 class="text-center mb-4 contact-title">Contact Us</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+      <div class="col">
+        <div class="card contact-card h-100 bg-secondary text-light border-0">
+          <div class="card-body text-center">
+            <h5 class="card-title">Location</h5>
+            <p>Near GHS Pattambi, Perinthalmanna Road, Pattambi</p>
+          </div>
+        </div>
+      </div>
 
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card contact-card h-100">
-        <div class="card-body">
-          <h5 class="card-title">Location</h5>
-          <p>Near GHS Pattambi, Perinthalmanna Road, Pattambi</p>
+      <div class="col">
+        <div class="card contact-card h-100 bg-secondary text-light border-0">
+          <div class="card-body text-center">
+            <h5 class="card-title">Contact Number</h5>
+            <p>+91 9447 444 328</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card contact-card h-100 bg-secondary text-light border-0">
+          <div class="card-body text-center">
+            <h5 class="card-title">Social Media</h5>
+            <p>Follow us on Facebook & Instagram</p>
+            <a href="https://www.instagram.com/nethra.pattambi" class="text-light d-block mb-2">
+              <i class="bi bi-instagram me-2"></i>nethra.pattambi
+            </a>
+            <a href="https://www.facebook.com/share/1MSP8NJBNT/?mibextid=wwXIfr" class="text-light d-block">
+              <i class="bi bi-facebook me-2"></i>Nethra EyeCare & Opticals
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col">
-      <div class="card contact-card h-100">
-        <div class="card-body">
-          <h5 class="card-title">Contact Number</h5>
-          <p>+91 9447 444 328</p>
-        </div>
-      </div>
+    <div class="map-responsive mb-3">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.05422796602!2d76.1845672745176!3d10.807158758627185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c5ce1013de53%3A0xdfbfd9c3e1585149!2sNethra%20eye%20care%20pattambi!5e0!3m2!1sen!2sin!4v1758455758867!5m2!1sen!2sin" 
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-   <div class="col">
-  <div class="card contact-card h-100">
-    <div class="card-body">
-      <h5 class="card-title">Social Media</h5>
-      <p>Follow us on Facebook & Instagram</p><br>
-      <i class="bi bi-instagram me-2"></i>
-      <a href="https://www.instagram.com/nethra.pattambi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="color: white;">
-        nethra.pattambi
-      </a><br>
-      <i class="bi bi-facebook me-2"></i>
-      <a href="https://www.facebook.com/share/1MSP8NJBNT/?mibextid=wwXIfr" style="color: white;">
-        Nethra EyeCare & Opticals
-      </a>
-    </div>
+    <p class="text-center mb-0">&copy; 2025 Nethra EyeCare & Opticals. All rights reserved.</p>
   </div>
-</div>
+</footer>
 
-    </div>
-  </div>
-  
-  
-</section>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.05422796602!2d76.1845672745176!3d10.807158758627185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c5ce1013de53%3A0xdfbfd9c3e1585149!2sNethra%20eye%20care%20pattambi!5e0!3m2!1sen!2sin!4v1758455758867!5m2!1sen!2sin" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+<style>
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    height: 0;
+  }
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+</style>
 
 <style>
 /* Section heading */
@@ -628,7 +701,7 @@ html {
   font-family: "Cambria", Georgia, serif;
   font-size: 3rem;          /* larger heading */
   font-weight: bold;
-  color: #0c4d05;
+  color: #e0e0e0;
 }
 
 /* Card style */
