@@ -302,7 +302,7 @@ html {
   <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col">
       <div class="card category-card">
-        <img src="images/eye glass.jpg" class="card-img-top" alt="Eye Glasses">
+        <img src="images/eye glass.jpg" class="card-img-top" alt="Eye Glasses" style="height: 500px;">
         <div class="card-body">
           <h5 class="card-title display-5">Eye Glasses</h5>
           <p class="card-text">Eyeglasses are a pair of lenses mounted in a frame you wear on your face so you can see better.</p>
@@ -314,7 +314,7 @@ html {
     <!-- Repeat for other cards -->
     <div class="col">
       <div class="card category-card">
-        <img src="images/screenglass.jpg" class="card-img-top" alt="...">
+        <img src="images/screenglass.jpg" class="card-img-top" alt="screen glass" style="height: 500px;">
         <div class="card-body">
           <h5 class="card-title">Screen Glass</h5>
           <p class="card-text">Computer glasses reduce glare, enhance contrast, and block blue light. They improve posture by allowing comfortable screen distance.</p>
@@ -326,7 +326,7 @@ html {
     <!-- Add more cards here -->
       <div class="col">
       <div class="card category-card">
-        <img src="images/sunglass.jpg" class="card-img-top" alt="...">
+        <img src="images/sunglass.jpg" class="card-img-top" alt="Sunglass" style="height: 500px;">
         <div class="card-body">
           <h5 class="card-title">Sunglass</h5>
           <p class="card-text">Sunglasses are an important type of eyewear that help to protect the eyes from UV rays emitted by the sun, as well as potentially harmful elements such as wind.</p>
@@ -338,7 +338,7 @@ html {
 
      <div class="col">
       <div class="card category-card">
-        <img src="images/contactlense.jpg" class="card-img-top" alt="...">
+        <img src="images/contactlense.jpg" class="card-img-top" alt="contact lense" style="height: 500px;">
         <div class="card-body">
           <h5 class="card-title">Contact Lense</h5>
           <p class="card-text">Contact lenses are thin, round lenses that rest on the surface of your eyes to help you see more clearly.</p>
@@ -440,51 +440,7 @@ html {
   </div>
 </section>
 
-<style>
-  
-/* ===== Layout ===== */
-.brands-section {
-  background: #f8f9fa;
-  padding: 40px 0;            /* space for heading */
-  text-align: center;
-}
 
-.brands-title {
- font-weight: bolder;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 70px;
-  color: #0c4d05;
-  text-align: center;
-}
-
-/* Wrapper hides overflow so the track can slide */
-.brands-wrapper {
-  overflow: hidden;
-  width: 100%;
-}
-
-/* Scrolling track */
-.brands-track {
-  display: flex;
-  gap: 60px;
-  width: max-content;
-  animation: scroll-left 5s linear infinite;
-}
-
-/* Logos: keep aspect ratio, limit max height */
-.brands-track img {
-  max-height: 120px;          /* adjust to fit your design */
-  height: auto;
-  width: auto;
-  object-fit: contain;
-}
-
-/* Continuous left scroll */
-@keyframes scroll-left {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-</style>
 
 <section id="appointment" class="py-5">
   <h1 class="text-center fw-bold"
@@ -492,45 +448,130 @@ html {
              font-size: 70px; color: #0c4d05;">
      Book Your Appointment
   </h1>
+<div class="container mt-4">
+  <div class="card w-100 shadow-lg border-0">
+    <div class="row g-0 d-flex justify-content-center align-items-center text-center" style="min-height: 300px;">
+      
+      <!-- Doctor details -->
+      <div class="col-md-8 p-4">
+        <h4 style="font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                   color: black; font-weight: bolder; text-transform: uppercase;">
+          Dr. Unnikrishnan V.V
+        </h4>
 
-  <div class="container mt-4">
-    <div class="card w-100 shadow-lg border-0">
-      <div class="row g-0 align-items-center">
-        
-        <!-- Left: Doctor details -->
-        <!-- <div class="col-md-7 p-4">
-          <h3 class="card-title"
-              style="font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-                     font-size: 40px; color: rgb(65,25,25);">
-            Book Your Appointment
-          </h3> -->
+        <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                  color: black; font-weight: bold;">
+          B.Sc, MBBS, DO
+        </p>
 
-          <h4 style="font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                     color: black; font-weight: bolder; text-transform: uppercase;">
-            Dr. Unnikrishnan V.V
-          </h4>
-
-          <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    color: black; font-weight: bold;">
-            B.Sc, MBBS, DO
-          </p>
-
-          <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    color: black; font-weight: bold;">
-            Book Now: +91 9447 444 328
-          </p>
-        </div>
-
-        <!-- Right: Doctor image -->
-        <!-- <div class="col-md-5 text-center p-3">
-          <img src="images/Optometrista escrevendo na área de transferência _ Foto Premium.jpg" class="img-fluid rounded-end"
-               alt="Dr. Unnikrishnan"
-               style="max-height: 350px; object-fit: cover;">
-        </div> -->
-
+        <p style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                  color: black; font-weight: bold;">
+          Book Now: +91 9447 444 328
+        </p>
       </div>
+
     </div>
   </div>
+</div>
+
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+  }
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+  }
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #6a64f1;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+</style>
 </section>
 
 
